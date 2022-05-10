@@ -1,7 +1,7 @@
 #ElectrolyteComposition
 
 ElectrolyteComposition converts all electrolytes to a fixed string representation in solvent mass fraction and salt molality.
-This is called a ``CompositionID'' and looks like the following, with delimiter ``_'' and separator ``|''
+This is called a CompositionID'and looks like the following, with delimiter ''_'' and separator ''|''
 
 $DELIMITED_SOLVENTS | $DELIMITED_SOLVENT_MASS_FRACS | $DELIMITED_SALTS | $DELIMITED_MOLALITIES
 
@@ -24,7 +24,7 @@ See worked through example in demo_electrolytecomp.py
 
 #Experiment
 
-Class ``Clio'' with Experiment.py handles all I/O to the Clio web-server located on the lab CPU - 
+Class ''Clio'' with Experiment.py handles all I/O to the Clio web-server located on the lab CPU - 
 LabView VIs translate these HTTP requests into orchestration commands.
 
 An object is instantiated with specification of a few kwargs:
@@ -38,7 +38,7 @@ A script that creates grids of volumes across a set offeeder solutions,
 then converts the grid to composition axes in a fast, vectorized manner.
 
 Key parameters:
-1) ``all_solvents'' : list of solvents present in ``densities_all'' for separation/calculation
-2) ``salts'' : dict of salt species as key and molar mass as value
-3) ``densities_all'' : dictionary of feeder solutions, keys as CompositionIDs, values as densities of the solutions
-4) ``volume_step'', ``total'' : discretization of volume grid and total mix volume respectively.
+1) ''all_solvents'' : list of solvents present in ''densities_all'' for separation/calculation
+2) ''salts'' : dict of salt species as key and molar mass as value
+3) ''densities_all'' : dictionary of feeder solutions, keys as CompositionIDs, values as densities of the solutions
+4) ''volume_step'', ''total'' : discretization of volume grid and total mix volume respectively.
