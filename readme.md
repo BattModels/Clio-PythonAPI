@@ -1,4 +1,4 @@
-#ElectrolyteComposition
+# ElectrolyteComposition
 
 ElectrolyteComposition converts all electrolytes to a fixed string representation in solvent mass fraction and salt molality.
 This is called a CompositionID'and looks like the following, with delimiter ''_'' and separator ''|''
@@ -22,7 +22,7 @@ Three constructors are provided:
 
 See worked through example in demo_electrolytecomp.py
 
-#Experiment
+# Experiment
 
 Class ''Clio'' with Experiment.py handles all I/O to the Clio web-server located on the lab CPU - 
 LabView VIs translate these HTTP requests into orchestration commands.
@@ -32,7 +32,7 @@ An object is instantiated with specification of a few kwargs:
 2) mix_volume: overall sample testing volume
 3) person: a pre-fix for the RunID to specify who ran the script, used to segregate data downtream.
 
-#vector_make_lookup
+# vector_make_lookup
 
 A script that creates grids of volumes across a set offeeder solutions,
 then converts the grid to composition axes in a fast, vectorized manner.
